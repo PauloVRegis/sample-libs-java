@@ -26,7 +26,9 @@ jobs:
        uses: jfrog/setup-jfrog-cli@v2
        env:
          JF_ENV_1: ${{ secrets.JF_SECRET_ENV_1 }}
-     - run: jf rt ping
+     - run: |
+         jf c use ${{ secrets.JF_SECRET_ENV_1 }}
+         jf rt ping
 #     steps:
 #     - uses: actions/checkout@v3
 #     - name: Set up JDK 11
