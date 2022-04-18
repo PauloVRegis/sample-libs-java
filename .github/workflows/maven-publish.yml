@@ -8,13 +8,14 @@ on:
     types: [created]
 
 jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     permissions:
-#       contents: read
-#       packages: write
+   build:
+     runs-on: ubuntu-latest
+     permissions:
+       contents: read
+       packages: write
      steps:
-     - uses: jfrog/setup-jfrog-cli@v2
+     - name: Teste Jfrog
+       uses: jfrog/setup-jfrog-cli@v2
      - run: jf --version
 #     steps:
 #     - uses: actions/checkout@v3
