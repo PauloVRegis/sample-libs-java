@@ -21,10 +21,12 @@ jobs:
        with:
          java-version: 11.0.2
      - name: Build with Maven
-       run: mvn -B package --file pom.xml
+       run: mvn -B package -Pnative --file pom.xml
      - name: Teste Jfrog
        uses: jfrog/setup-jfrog-cli@v2
-     - run: jf --version
+       env:
+         JF_ENV_1: ${{ secrets.JF_SECRET_ENV_1 }}
+     - run: jf rt ping
 #     steps:
 #     - uses: actions/checkout@v3
 #     - name: Set up JDK 11
