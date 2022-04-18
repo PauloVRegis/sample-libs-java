@@ -27,7 +27,7 @@ jobs:
        env:
          JF_ENV_1: ${{ secrets.JF_SECRET_ENV }}
      - run: |
-         jf rt ping --url https://odinartifactory.jfrog.io --user svc_devops --access-token ${{ secrets.ARTIFACTORY_TOKEN_REF }}
+         jf rt ping --url https://odinartifactory.jfrog.io --user svc_devops --access-token eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJydjg5V2M5eU5UVnJOMDE4NHVLMUpua2xiWm42SVRsVHRQT3pZTWF5dkNJIn0.eyJleHQiOiJ7XCJyZXZvY2FibGVcIjpcInRydWVcIn0iLCJzdWIiOiJqZmFjQDAxZnhqc2djZWpxc3pjMDF4YndjZ3YxdGQ2XC91c2Vyc1wvc3ZjX2Rldm9wcyIsInNjcCI6ImFwcGxpZWQtcGVybWlzc2lvbnNcL3VzZXIiLCJhdWQiOiIqQCoiLCJpc3MiOiJqZmZlQDAwMCIsImV4cCI6MTY4MTIzODE4MiwiaWF0IjoxNjQ5NzAyMTgyLCJqdGkiOiJlOGY4Y2VhNy03ODRmLTRjNWItYTM3Ny05NjkyZDgxZGJlYWQifQ.C2gAvaoSCbEAzYv3qKvgImFFM3co1NB87Ls7D3xvI5-xw6AdCax0DW2SuRxx1iiEuZvrE99HSVI0Mg3RBktzhCIiPDdAcQMq3qtlhKLokkYwcdGJubozv_ClChZNzLTphTaZn1I4nNpwh9Uig4SWsx3eerSCc_KJwWJ-zzRgtiRaZuIQ615VZw9DHSN6tKKjcIsn9Xmm1FOH-8YA8bBKd_c-tmEJCuEn3vJbqWay4eKPLeBAQVJpORPkYGSaJc4nbU20Fj0oLgDufK_p3sn81G78g3ann4zouemmAYTTXOIerT7wHtI9guftaVhgF26iDkAFpxOGt_LxKAGwbH_O6A
 #     steps:
 #     - uses: actions/checkout@v3
 #     - name: Set up JDK 11
