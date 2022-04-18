@@ -27,7 +27,7 @@ jobs:
        env:
          JF_ENV_1: ${{ secrets.JF_SECRET_ENV }}
      - run: |
-         jf rt ping --url https://odinartifactory.jfrog.io/
+         jf rt ping --url https://odinartifactory.jfrog.io --user svc_devops --access-token ${{ secrets.ARTIFACTORY_TOKEN_REF }}
 #     steps:
 #     - uses: actions/checkout@v3
 #     - name: Set up JDK 11
