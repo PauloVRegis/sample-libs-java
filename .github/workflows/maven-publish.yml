@@ -27,7 +27,7 @@ jobs:
        env:
          JF_ENV_1: ${{ secrets.JF_SECRET_ENV }}
      - run: |
-         jf rt ping --url ${{ secrets.JF_SECRET_ENV }}
+         jf rt ping --url ${{ env.JF_ENV_1 }}
 #     steps:
 #     - uses: actions/checkout@v3
 #     - name: Set up JDK 11
