@@ -1,3 +1,3 @@
 # sample-libs-java
 
-Teste Jfrog
+Teste Jfrog cli
